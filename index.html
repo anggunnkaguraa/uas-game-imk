@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flappy Cinnamoroll</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+
+<div id="startScreen">
+    <h1>Flappy Cinnamoroll</h1>
+    <button id="startBtn">Start Game</button>
+</div>
+
+<div id="tutorialScreen">
+    <h2>Tutorial</h2>
+    <p>Press Space or Click to make Cinnamoroll jump!</p>
+    <img id="tutorialImage" src="taptap.png" alt="Tutorial Image">
+    <button id="tutorialBtn">Continue to Game</button>
+</div>
+
+<canvas id="gameCanvas"></canvas>
+
+<div id="gameOverScreen">
+    <h2>Game Over!</h2>
+    <p>Your score: <span id="finalScore">0</span></p>
+    <div id="gameOverButtons">
+        <button class="icon-button" id="refreshBtn" title="Play Again" aria-label="Play Again">
+            <img src="icon refresh.png" alt="Play Again" style="width: 36px; height: 36px;">
+        </button>
+        <button class="icon-button" id="exitBtn" title="Exit" aria-label="Exit">
+            <img src="icon exit.png" alt="Exit" style="width: 36px; height: 36px;">
+        </button>
+    </div>
+</div>
+
+<script src="script.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>

@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    background: #ff69b4; /* Full pink background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    overflow: hidden; /* Prevent scrolling */
+}
+canvas {
+    display: block;
+    border: 2px solid #333;
+    width: 100vw; /* Fullscreen width */
+    height: 100vh; /* Fullscreen height */
+}
+#startScreen, #gameOverScreen, #tutorialScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+    width: 320px;
+    max-width: 90vw;
+}
+#startScreen h1 {
+    background: rgba(255, 255, 255, 0.5); /* Add background color to title */
+    padding: 10px;
+    border-radius: 5px;
+}
+#gameOverScreen {
+    background: #4a4a4a; /* Change game over screen color */
+}
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+#tutorialImage {
+    width: 100%; /* Make tutorial image responsive */
+    max-width: 300px; /* Limit max width */
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#gameOverButtons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+    gap: 40px; /* Increase gap between buttons */
+}
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+}
+.icon-button:hover {
+    filter: brightness(1.2);
+}
